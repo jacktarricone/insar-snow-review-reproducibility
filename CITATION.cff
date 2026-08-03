@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "InSAR seasonal snow review reproducibility materials"
+title: "Interferometric Synthetic Aperture Radar (InSAR) for Monitoring Seasonal Snow: Data and Code for Figure Generation"
 message: "Cite the Version 1.0.0 Zenodo record and the associated review article."
 type: software
 authors:
@@ -9,11 +9,4 @@ authors:
 version: 1.0.0
 date-released: 2026-08-03
 abstract: "Curated literature tables, geospatial inputs, and R scripts used for the original analyses shown in Figures 1, 3, and 8 of the review article Interferometric Synthetic Aperture Radar (InSAR) for Monitoring Seasonal Snow."
-keywords:
-  - InSAR
-  - snow water equivalent
-  - seasonal snow
-  - NISAR
-  - remote sensing
-  - reproducibility
 license: MIT
