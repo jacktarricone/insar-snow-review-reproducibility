@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: "Interferometric Synthetic Aperture Radar (InSAR) for Monitoring Seasonal Snow: Data and Code for Figure Generation"
-message: "Cite the Version 1.0.0 Zenodo record and the associated review article."
+message: "Please cite the Version 1.0.0 Zenodo record and the associated review article."
 type: software
 authors:
   - family-names: Tarricone
@@ -9,3 +9,6 @@ authors:
 version: 1.0.0
 date-released: 2026-08-03
 license: MIT
+doi: "10.5281/zenodo.21776012"
+url: "https://doi.org/10.5281/zenodo.21776012"
+repository-code: "https://github.com/jacktarricone/insar-snow-review-reproducibility"
