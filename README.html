@@ -11,7 +11,7 @@
 
 
 
-<title>THIRD_PARTY_NOTICES</title>
+<title>README</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -352,56 +352,61 @@ display: none;
 </div>
 
 
-<div id="third-party-data-and-notices" class="section level1">
-<h1>Third-party data and notices</h1>
-<p>Third-party files are included only to support figure reproduction.
-They are not relicensed under the repository’s MIT or CC BY 4.0
-licenses. Users must follow the original source terms and cite the
-original data products.</p>
-<div id="global-seasonal-snow-classification-version-1" class="section level2">
-<h2>Global Seasonal-Snow Classification, Version 1</h2>
-<p>Included files:</p>
-<pre class="text"><code>data/rasters/sturm/SnowClass_EA_05km_2.50arcmin_2021_v01.0.tif
-data/rasters/sturm/SnowClass_GL_05km_2.50arcmin_2021_v01.0.tif</code></pre>
-<p>Citation:</p>
-<pre class="text"><code>Liston, G. E., and Sturm, M. (2021). Global Seasonal-Snow Classification, Version 1. NASA National Snow and Ice Data Center Distributed Active Archive Center. https://doi.org/10.5067/99FTCYYYLAQ0</code></pre>
-<p>Use: background snow classes for Figure 3.</p>
+<div id="insar-seasonal-snow-review-reproducibility-materials" class="section level1">
+<h1>InSAR seasonal snow review reproducibility materials</h1>
+<p>R code and supporting data for the original analyses in Figures 1, 3,
+and 8 of <strong>Interferometric Synthetic Aperture Radar (InSAR) for
+Monitoring Seasonal Snow</strong>.</p>
+<div id="contents" class="section level2">
+<h2>Contents</h2>
+<ul>
+<li><code>scripts/01_plot_publication_counts.R</code>: Figure 1</li>
+<li><code>scripts/02_plot_study_locations_map.R</code>: Figure 3</li>
+<li><code>scripts/03_plot_nisar_orbits_wus_map_optional.R</code>: Figure
+8</li>
+<li><code>scripts/run_all.R</code>: runs Figures 1 and 3</li>
+<li><code>scripts/check_inputs.R</code>: checks required inputs</li>
+<li><code>data/csv/</code>: author-curated literature tables</li>
+<li><code>data/rasters/</code> and <code>data/vectors/</code>:
+geospatial inputs</li>
+</ul>
 </div>
-<div id="world-bank-official-boundaries" class="section level2">
-<h2>World Bank Official Boundaries</h2>
-<p>Included files:</p>
-<pre class="text"><code>data/vectors/world-administrative-boundaries/</code></pre>
-<p>Source: World Bank Official Boundaries, dataset identifier
-<code>0038272</code>.</p>
-<p>License: Creative Commons Attribution 4.0.</p>
-<p>Use: national boundaries for Figure 3. Boundaries are used for
-visualization and do not imply a position on legal status or
-sovereignty.</p>
+<div id="run" class="section level2">
+<h2>Run</h2>
+<p>Install the required R packages:</p>
+<pre class="r"><code>install.packages(c(
+  &quot;readr&quot;, &quot;dplyr&quot;, &quot;tidyr&quot;, &quot;ggplot2&quot;, &quot;scales&quot;,
+  &quot;sf&quot;, &quot;terra&quot;, &quot;patchwork&quot;, &quot;grid&quot;, &quot;units&quot;, &quot;cowplot&quot;
+))</code></pre>
+<p>From the repository root:</p>
+<pre class="bash"><code>Rscript scripts/check_inputs.R
+Rscript scripts/run_all.R</code></pre>
+<p>Figure 8 also requires <code>MODIS_mtnsnow_classes.tif</code> from
+Wrzesien et al. (2019), DOI <code>10.5281/zenodo.2626737</code>. Place
+the file in <code>data/rasters/</code> and run:</p>
+<pre class="bash"><code>Rscript scripts/03_plot_nisar_orbits_wus_map_optional.R</code></pre>
+<p>Generated figures and tables are written to
+<code>outputs/</code>.</p>
 </div>
-<div id="u.s.-census-bureau-2018-state-cartographic-boundaries" class="section level2">
-<h2>U.S. Census Bureau 2018 state cartographic boundaries</h2>
-<p>Included files:</p>
-<pre class="text"><code>data/vectors/cb_2018_us_state_20m/</code></pre>
-<p>Source: U.S. Census Bureau, 2018 Cartographic Boundary Files, states
-at 1:20,000,000 scale.</p>
-<p>Use: U.S. state boundaries for Figures 3 and 8.</p>
+<div id="external-data" class="section level2">
+<h2>External data</h2>
+<p>Sources and licensing for third-party geospatial inputs are listed in
+<code>THIRD_PARTY_NOTICES.md</code>.</p>
 </div>
-<div id="nisar-track-frame-files" class="section level2">
-<h2>NISAR track-frame files</h2>
-<p>Included files:</p>
-<pre class="text"><code>data/vectors/nisar/nisar_ascending_trackframes.gpkg
-data/vectors/nisar/nisar_descending_trackframes.gpkg</code></pre>
-<p>Source: NISAR Track-Frame Database. The files preserve the
-track/frame geometry used for Figure 8. Cite the NISAR mission and the
-official track-frame database documentation in derivative work.</p>
+<div id="citation" class="section level2">
+<h2>Citation</h2>
+<p>Cite the associated Zenodo Version 1.0.0 record and the review
+article. The repository includes <code>CITATION.cff</code> for software
+citation metadata.</p>
 </div>
-<div id="global-seasonal-mountain-snow-mask-from-modis-mod10a2" class="section level2">
-<h2>Global Seasonal Mountain Snow Mask from MODIS MOD10A2</h2>
-<p>Not redistributed. Required only for Figure 8.</p>
-<p>Citation:</p>
-<pre class="text"><code>Wrzesien, M. L., Pavelsky, T. M., Durand, M. T., Lundquist, J. D., and Dozier, J. (2019). Global Seasonal Mountain Snow Mask from MODIS MOD10A2. Zenodo. https://doi.org/10.5281/zenodo.2626737</code></pre>
-<p>Required file after extraction:</p>
-<pre class="text"><code>MODIS_mtnsnow_classes.tif</code></pre>
+<div id="license" class="section level2">
+<h2>License</h2>
+<ul>
+<li>R code: MIT License, see <code>LICENSE</code>.</li>
+<li>Author-created CSV tables and documentation: CC BY 4.0, see
+<code>LICENSE_DATA.txt</code>.</li>
+<li>Third-party files retain their original terms.</li>
+</ul>
 </div>
 </div>
 

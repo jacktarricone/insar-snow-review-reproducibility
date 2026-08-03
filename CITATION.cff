@@ -8,5 +8,4 @@ authors:
     orcid: "https://orcid.org/0000-0001-9499-3354"
 version: 1.0.0
 date-released: 2026-08-03
-abstract: "Curated literature tables, geospatial inputs, and R scripts used for the original analyses shown in Figures 1, 3, and 8 of the review article Interferometric Synthetic Aperture Radar (InSAR) for Monitoring Seasonal Snow."
 license: MIT
