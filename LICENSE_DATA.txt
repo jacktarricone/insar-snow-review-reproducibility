@@ -1,0 +1,7 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The author-curated CSV files and original repository documentation are licensed under CC BY 4.0 unless a file states otherwise.
+
+License: https://creativecommons.org/licenses/by/4.0/
+
+Third-party geospatial files are excluded from this license and retain their original source terms. See THIRD_PARTY_NOTICES.md.
