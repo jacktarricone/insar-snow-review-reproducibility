@@ -1,9 +1,13 @@
 # InSAR seasonal snow review reproducibility materials
 
-R code and supporting data for the original analyses in Figures 1, 3, and 8 of **Interferometric Synthetic Aperture Radar (InSAR) for Monitoring Seasonal Snow**.
+R code and supporting data for the original analyses in Figures 1, 3, and 8 of:
 
+**Tarricone et al. (2026), “Interferometric Synthetic Aperture Radar (InSAR) for Monitoring Seasonal Snow,” Water Resources Research, 62, e2025WR042866.**
+https://doi.org/10.1029/2025WR042866
+
+- Published article: https://doi.org/10.1029/2025WR042866
+- Archived reproducibility materials: https://doi.org/10.5281/zenodo.21776012
 - GitHub repository: https://github.com/jacktarricone/insar-snow-review-reproducibility
-- Archived release: https://doi.org/10.5281/zenodo.21776012
 
 ## Contents
 
@@ -47,11 +51,13 @@ Sources and licensing for third-party geospatial inputs are listed in `THIRD_PAR
 
 ## Citation
 
-Please cite the archived Version 1.0.0 Zenodo record:
+If these materials are used in connection with the scientific methods, synthesis, or results presented in the review article, please cite:
 
-> Tarricone, J. (2026). *Interferometric Synthetic Aperture Radar (InSAR) for Monitoring Seasonal Snow: Data and Code for Figure Generation* (Version 1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.21776012
+Tarricone, J., et al. (2026). Interferometric Synthetic Aperture Radar (InSAR) for Monitoring Seasonal Snow. *Water Resources Research*, 62, e2025WR042866. https://doi.org/10.1029/2025WR042866
 
-The repository also includes `CITATION.cff` for software citation metadata.
+The archived data and code used to generate the original analyses in Figures 1, 3, and 8 are available as:
+
+Tarricone, J. (2026). *Interferometric Synthetic Aperture Radar (InSAR) for Monitoring Seasonal Snow: Data and Code for Figure Generation* (Version 1.0.0) [Dataset and Software]. Zenodo. https://doi.org/10.5281/zenodo.21776012
 
 ## License
 
