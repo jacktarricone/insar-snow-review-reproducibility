@@ -1,4 +1,6 @@
 # InSAR seasonal snow review reproducibility materials
+[![Article DOI](https://img.shields.io/badge/DOI-10.1029%2F2025WR042866-blue)](https://doi.org/10.1029/2025WR042866)
+[![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21776012.svg)](https://doi.org/10.5281/zenodo.21776012)
 
 R code and supporting data for the original analyses in Figures 1, 3, and 8 of:
 
