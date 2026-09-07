@@ -1,14 +1,81 @@
 cff-version: 1.2.0
 title: "Interferometric Synthetic Aperture Radar (InSAR) for Monitoring Seasonal Snow: Data and Code for Figure Generation"
-message: "Please cite the Version 1.0.0 Zenodo record and the associated review article."
+message: "Please cite the archived reproducibility materials and the associated review article."
 type: software
+
 authors:
   - family-names: Tarricone
     given-names: Jack
     orcid: "https://orcid.org/0000-0001-9499-3354"
+
 version: 1.0.0
 date-released: 2026-08-03
 license: MIT
+
 doi: "10.5281/zenodo.21776012"
 url: "https://doi.org/10.5281/zenodo.21776012"
 repository-code: "https://github.com/jacktarricone/insar-snow-review-reproducibility"
+
+preferred-citation:
+  type: article
+  title: "Interferometric Synthetic Aperture Radar (InSAR) for Monitoring Seasonal Snow"
+  authors:
+    - family-names: Tarricone
+      given-names: Jack
+      orcid: "https://orcid.org/0000-0001-9499-3354"
+    - family-names: Palomaki
+      given-names: Ross T.
+      orcid: "https://orcid.org/0000-0002-3304-9914"
+    - family-names: Bonnell
+      given-names: Randall
+      orcid: "https://orcid.org/0000-0002-8812-351X"
+    - family-names: Hoppinen
+      given-names: Zachary
+      orcid: "https://orcid.org/0000-0003-0916-7774"
+    - family-names: Oveisgharan
+      given-names: Shadi
+      orcid: "https://orcid.org/0009-0008-2559-0373"
+    - family-names: Ruiz
+      given-names: Jorge Jorge
+      orcid: "https://orcid.org/0000-0002-0510-7451"
+    - family-names: Marshall
+      given-names: Hans-Peter
+      orcid: "https://orcid.org/0000-0002-4852-5637"
+    - family-names: Deeb
+      given-names: Elias J.
+      orcid: "https://orcid.org/0009-0001-7774-0328"
+    - family-names: Vuyovich
+      given-names: Carrie
+      orcid: "https://orcid.org/0009-0001-5671-0568"
+    - family-names: Margulis
+      given-names: Steven A.
+      orcid: "https://orcid.org/0000-0001-7581-2511"
+    - family-names: Yueh
+      given-names: Simon
+      orcid: "https://orcid.org/0000-0001-7061-5295"
+    - family-names: Forster
+      given-names: Richard R.
+      orcid: "https://orcid.org/0000-0003-3945-5072"
+    - family-names: Webb
+      given-names: Ryan W.
+      orcid: "https://orcid.org/0000-0002-1565-909X"
+    - family-names: McGrath
+      given-names: Daniel
+      orcid: "https://orcid.org/0000-0002-9462-6842"
+    - family-names: Lemmetyinen
+      given-names: Juha
+      orcid: "https://orcid.org/0000-0003-4434-9696"
+    - family-names: Elder
+      given-names: Kelly
+      orcid: "https://orcid.org/0000-0002-1143-8708"
+    - family-names: Shah
+      given-names: Rashmi
+      orcid: "https://orcid.org/0000-0002-5412-9358"
+    - family-names: Xu
+      given-names: Xiaolan
+      orcid: "https://orcid.org/0000-0003-4321-7931"
+  journal: "Water Resources Research"
+  year: 2026
+  volume: 62
+  issue: 9
+  doi: "10.1029/2025WR042866"
